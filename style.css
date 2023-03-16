@@ -1,0 +1,178 @@
+body {
+  background-color: #c6daf1;
+}
+
+.title {
+  text-align: center;
+  font-size: 34px;
+}
+
+.boardWrapper {
+  /* background-color: #b3eeb3; */
+  background-color: #f3eded;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 0px 10px;
+}
+
+section .username {
+  color: green !important;
+  font-weight: 700;
+}
+
+section .nameArea {
+  display: flex;
+  align-items: center;
+  margin-bottom: -14px;
+}
+
+section .comment {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.success_message {
+  color: green;
+  padding-left: 10px;
+}
+
+.error_message {
+  color: red;
+  padding-left: 10px;
+}
+
+.formWrapper {
+  padding: 16px;
+  margin-left: 20px;
+}
+
+.commentTextArea {
+  margin-top: 10px;
+  width: 500px;
+  height: 90px;
+}
+/* ボタン全体 */
+#page_top{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: #e25407;
+  opacity: 0.6;
+  }
+
+  /* Font Awesome */
+  #page_top::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0d8';
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  #page_top::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+/* レスポンシブWebデザインのスタイル */
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+header {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-color: #333;
+color: #fff;
+}
+nav {
+margin-top: 10px;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+nav li {
+margin: 0 10px;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+}
+main {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+section {
+width: 48%;
+margin-bottom: 20px;
+}
+}
+
+/* タブレット向けのスタイル */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+header {
+padding: 40px;
+}
+nav li {
+margin: 0 20px;
+}
+main {
+padding: 40px;
+}
+section {
+width: 30%;
+margin-bottom: 40px;
+}
+}
+
+/* デスクトップ向けのスタイル */
+@media screen and (min-width: 1024px) {
+header {
+padding: 60px;
+}
+nav li {
+margin: 0 30px;
+}
+main {
+padding: 60px;
+}
+section {
+width: 25%;
+margin-bottom: 60px;
+}
+}
